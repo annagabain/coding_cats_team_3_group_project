@@ -35,10 +35,10 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 1rem;
-  background: var(--background-green);
-  color: var(--text);
+    margin: 0;
+    /* padding: 1rem; */
+    background: var(--background-green);
+    color: var(--text);
 }
 
 h1,
