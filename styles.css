@@ -62,3 +62,35 @@ footer {
     font-size: 1.6rem;
   }
 }
+
+/* Desktop Design */
+@media (min-width: 320px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav button {
+    background-color: var(--kokvran-red);
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+    color: white;
+  }
+
+  nav a {
+    color: var(--kokvran-red);
+    text-decoration: none;
+  }
+
+  button a {
+    color: white;
+  }
+
+  nav p {
+    padding: 0;
+    margin: 0;
+  }
+}
