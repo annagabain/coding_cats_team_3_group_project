@@ -1,0 +1,52 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+
+    background:
+        linear-gradient(rgba(40, 55, 20, 0.45),
+            rgba(40, 55, 20, 0.45)),
+        url("images/hero-image.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    color: white;
+
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    color: whitesmoke;
+    font-size: clamp(4rem, 7vw, 6rem);
+    margin-bottom: 1rem;
+}
+
+.hero-welcome {
+    color: whitesmoke;
+
+}
+
+.hero-text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 800px;
+
+    margin-bottom: 2.5rem;
+}
