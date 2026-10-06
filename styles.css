@@ -34,9 +34,18 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 0;
-  padding: 1rem;
+  /* padding: 1rem; */
   background: var(--background-green);
   color: var(--text);
 }
@@ -50,6 +59,23 @@ h4 {
   font-style: var(--font-heading-style);
   color: var(--text);
   line-height: 1.2;
+}
+
+.btn {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  background-color: var(--kokvran-red);
+  border: 1px solid var(--kokvran-red);
+  color: white;
+  border-radius: 50px;
+  padding: 12px;
+}
+
+.btn--secondary {
+  background-color: transparent;
 }
 
 footer {

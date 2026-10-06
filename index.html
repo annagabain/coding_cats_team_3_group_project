@@ -5,34 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="hero.css" />
     <title>Kokvran</title>
   </head>
   <body>
-    <!-- Mobile Nav bar  -->
-    <nav id="mobile-nav">
-      <img
-        id="menu_hamburger"
-        src="images/hamburger_menu.svg"
-        alt="hamburger menu icon"
-      />
-      <div id="mobile-nav-container">
-        <button id="close">X</button>
-        <span>Kokvrån</span>
-        <a href="index.html">HOME</a>
-        <a href="openhours.html">OPEN HOURS</a>
-        <a href="ourfood.html">OUR FOOD</a>
-        <a href="events.html">EVENTS</a>
-        <button>
-          <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
-            >FOLLOW US</a
-          >
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile Nav bar  -->
-
-    <!-- Desktop Nav bar  -->
-    <nav id="desktop-nav">
+    <nav>
       <span>Kokvrån</span>
       <a href="index.html">HOME</a>
       <a href="openhours.html">OPEN HOURS</a>
@@ -44,18 +21,91 @@
         >
       </button>
     </nav>
-    <!-- Desktop Nav bar  -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-welcome">Welcome to Kokvrån</h1>
+        <p class="hero-text">
+          When you want to feel right at home, but out at a venue. You know the
+          vibe, you're always welcome here.
+        </p>
+        <div class="btn-group">
+          <a
+            href="https://www.instagram.com/kokvran.karrtorp/"
+            class="btn"
+            target="_blank"
+            >Follow Us</a
+          >
+          <a href="openhours.html" class="btn btn--secondary">Opening Hours</a>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <p class="text">
+          A second living room – Kokvrån is a cozy little corner spot on
+          Kärrtorp Square, almost at the very end of Metro Line 17 toward
+          Skarpnäck. Our hope is that you'll want to swing by Kokvrån often, if
+          not all the time. Whether it's for a grab-and-go coffee and sandwich
+          before catching the subway to work, a leisurely breakfast when you
+          have more time, lunch or a coffee break during the day, or a glass of
+          wine on a Friday, you'll always find a reason to stop by.
+        </p>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <img src="images/gallery-1.jpg" alt="Woman in cozy setting" />
+        <img src="images/gallery-2.jpg" alt="Gallery Image 2" />
+        <img src="images/gallery-3.jpg" alt="Gallery Image 3" />
+      </div>
+    </section>
+    <section class="open-hours">
+      <div class="container">
+        <ul>
+          <li>
+            <strong>Frukost</strong>
+            från <time datetime="07:45">07:45</time>
+          </li>
 
-    <h1>Välkommen till Kokvrån</h1>
-    <pre>
-      Frukost från 7:45 
-      Lunch 11:00 – 15:30 
-      Eftermiddagshäng fram till 17:00
-      Fredagshäng fram till 19:30, AW från 15:30 
-      —— 
-      Lördaghäng 8:30 – 16:00
-      Söndagshäng 9:00 – 15:30
-    </pre>
+          <li>
+            <strong>Lunch</strong>
+            <time datetime="11:00">11:00</time>–<time datetime="15:30"
+              >15:30</time
+            >
+          </li>
+
+          <li>
+            <strong>Eftermiddagshäng</strong>
+            fram till <time datetime="17:00">17:00</time>
+          </li>
+
+          <li>
+            <strong>Fredagshäng</strong>
+            fram till <time datetime="19:30">19:30</time>
+            <span>AW från <time datetime="15:30">15:30</time></span>
+          </li>
+        </ul>
+
+        <hr />
+
+        <ul>
+          <li>
+            <strong>Lördagshäng</strong>
+            <time datetime="08:30">08:30</time>–<time datetime="16:00"
+              >16:00</time
+            >
+          </li>
+
+          <li>
+            <strong>Söndagshäng</strong>
+            <time datetime="09:00">09:00</time>–<time datetime="15:30"
+              >15:30</time
+            >
+          </li>
+        </ul>
+      </div>
+      <img src="images/open-hours.jpg" alt="Wine bottles in the bar" />
+    </section>
 
     <footer>
       Student concept project by Coding Cats Team, Hyper Island. Not affiliated
