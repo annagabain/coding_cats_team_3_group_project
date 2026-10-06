@@ -45,3 +45,23 @@ footer {
         font-size: 1.6rem;
     }
 }
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+nav button {
+    background-color: var(--kokvran-red);
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+    color: white;
+}
+
+nav a {
+    color: var(--kokvran-red);
+    text-decoration: none;
+}
