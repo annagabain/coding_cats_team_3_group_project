@@ -1,0 +1,47 @@
+:root {
+    --background-green: #9CB58A;
+    --kokvran-red: #830B0B;
+    --text: #000000;
+
+    --max-width: 1100px;
+
+    --font-heading: "Alegreya Sans", sans-serif;
+    --font-heading-weight: 400;
+    --font-heading-style: normal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    background: var(--background-green);
+    color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-style: var(--font-heading-style);
+    color: var(--text);
+    line-height: 1.2;
+}
+
+footer {
+    font-size: 0.5rem;
+}
+
+
+
+/* Mobile Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+}
