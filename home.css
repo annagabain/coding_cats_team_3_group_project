@@ -10,8 +10,7 @@
   letter-spacing: 1px;
 }
 .open-hours,
-.info,
-.gallery {
+.info {
   padding: 3rem 0 2rem;
 }
 .gallery {
@@ -82,10 +81,6 @@
   .gallery .section-container {
     gap: 30px;
   }
-  .gallery {
-    padding: 0;
-  }
-
   .info {
     padding: 5rem 0 4rem;
   }
