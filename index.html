@@ -8,8 +8,31 @@
     <title>Kokvran</title>
   </head>
   <body>
-    <!-- reusable Nav bar component -->
-    <nav>
+    <!-- Mobile Nav bar  -->
+    <nav id="mobile-nav">
+      <img
+        id="menu_hamburger"
+        src="images/hamburger_menu.svg"
+        alt="hamburger menu icon"
+      />
+      <div id="mobile-nav-container">
+        <button id="close">X</button>
+        <span>Kokvrån</span>
+        <a href="index.html">HOME</a>
+        <a href="openhours.html">OPEN HOURS</a>
+        <a href="ourfood.html">OUR FOOD</a>
+        <a href="events.html">EVENTS</a>
+        <button>
+          <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
+            >FOLLOW US</a
+          >
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Nav bar  -->
+
+    <!-- Desktop Nav bar  -->
+    <nav id="desktop-nav">
       <span>Kokvrån</span>
       <a href="index.html">HOME</a>
       <a href="openhours.html">OPEN HOURS</a>
@@ -21,7 +44,7 @@
         >
       </button>
     </nav>
-    <!-- reusable Nav bar component -->
+    <!-- Desktop Nav bar  -->
 
     <h1>Välkommen till Kokvrån</h1>
     <pre>
@@ -38,5 +61,6 @@
       Student concept project by Coding Cats Team, Hyper Island. Not affiliated
       with Kokvrån.
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
