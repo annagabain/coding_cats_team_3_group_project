@@ -1,47 +1,64 @@
 :root {
-    --background-green: #9CB58A;
-    --kokvran-red: #830B0B;
-    --text: #000000;
+  --background-green: #9cb58a;
+  --kokvran-red: #830b0b;
+  --text: #000000;
 
-    --max-width: 1100px;
+  --max-width: 1100px;
 
-    --font-heading: "Alegreya Sans", sans-serif;
-    --font-heading-weight: 400;
-    --font-heading-style: normal;
+  --font-heading: "Alegreya Sans", sans-serif;
+  --font-heading-weight: 400;
+  --font-heading-style: normal;
 
+  --font-header: "DM Sans", sans-serif;
+  --font-header-weight: 400;
+  --font-header-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("/fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 1rem;
-    background: var(--background-green);
-    color: var(--text);
+  margin: 0;
+  padding: 1rem;
+  background: var(--background-green);
+  color: var(--text);
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: var(--font-heading);
-    font-weight: var(--font-heading-weight);
-    font-style: var(--font-heading-style);
-    color: var(--text);
-    line-height: 1.2;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-style: var(--font-heading-style);
+  color: var(--text);
+  line-height: 1.2;
 }
 
 footer {
-    font-size: 0.5rem;
+  font-size: 0.5rem;
 }
-
-
 
 /* Mobile Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 1.6rem;
-    }
+  h1 {
+    font-size: 1.6rem;
+  }
 }
