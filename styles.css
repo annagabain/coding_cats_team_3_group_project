@@ -87,18 +87,44 @@ footer {
   h1 {
     font-size: 1.6rem;
   }
+
+  nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #mobile-nav-container {
+    flex-direction: column;
+    display: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(61, 79, 63);
+  }
 }
 
 /* Desktop Design */
-@media (min-width: 320px) {
-  nav {
+@media (min-width: 760px) {
+
+/* Navigation bar */
+
+  #mobile-nav {
+    display: none;
+  }
+
+  #desktop-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
-  nav button {
+  #desktop-nav button {
     background-color: var(--kokvran-red);
     border-radius: 20px;
     border-style: none;
@@ -106,17 +132,18 @@ footer {
     color: white;
   }
 
-  nav a {
+  #desktop-nav a {
     color: var(--kokvran-red);
     text-decoration: none;
   }
 
-  button a {
+  #desktop-nav a {
     color: white;
   }
 
-  nav p {
+  #desktop-nav p {
     padding: 0;
     margin: 0;
   }
+/* Navigation bar */
 }
