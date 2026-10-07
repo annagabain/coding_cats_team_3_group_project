@@ -5,14 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/our-food.css" />
     <title>Our food</title>
   </head>
   <body>
+    <!-- Mobile Nav bar  -->
+    <nav id="mobile-nav">
+      <img
+        id="menu_hamburger"
+        src="images/hamburger_menu.svg"
+        alt="hamburger menu icon"
+      />
+      <div id="mobile-nav-container">
+        <button id="close">X</button>
+        <span>Kokvrån</span>
+        <a href="index.html">HOME</a>
+        <a href="openhours.html">OPEN HOURS</a>
+        <a href="ourfood.html">OUR FOOD</a>
+        <a href="events.html">EVENTS</a>
+        <button>
+          <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
+            >FOLLOW US</a
+          >
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Nav bar  -->
     <!-- Desktop Nav bar  -->
     <nav id="desktop-nav">
       <span>Kokvrån</span>
       <a href="index.html">HOME</a>
-      <a href="index.html#openinghours-anchor-link" >OPEN HOURS</a>
+      <a href="#openinghours-anchor-link">OPEN HOURS</a>
+      <!-- <a href="index.html#openinghours-anchor-link" >OPEN HOURS</a> -->
       <a href="ourfood.html">OUR FOOD</a>
       <a href="events.html">EVENTS</a>
       <button>
@@ -21,6 +45,121 @@
         >
       </button>
     </nav>
+
+    <main class="food">
+      <header class="food-intro section-container">
+        <h1>Cooked, baked, poured</h1>
+        <img
+          class="food-intro__img"
+          src="images/food-1.webp"
+          alt="Fresh pastries and coffee on a table at Kokvrån"
+        />
+        <p class="text">
+          What is served at Kokvrån depends on the time of day, the season and
+          what our bakers feel like making. Everything is made in small batches,
+          so when it's gone, it's gone. Come early for the best choice, or stay
+          for the afternoon.
+        </p>
+
+        <ul class="food-jump">
+          <li><a class="btn btn--secondary" href="#breakfast">Breakfast</a></li>
+          <li><a class="btn btn--secondary" href="#lunch">Lunch</a></li>
+          <li>
+            <a class="btn btn--secondary" href="#friday-hang">Friday hang</a>
+          </li>
+        </ul>
+      </header>
+      <section id="breakfast" class="food-section">
+        <div class="section-container food-section__inner">
+          <img
+            src="images/food-breakfast.webp"
+            alt="Breakfast plate with bread, eggs and coffee"
+          />
+          <div class="food-section__body">
+            <span class="food-time">From 7:45 AM</span>
+            <h2>Breakfast</h2>
+            <p class="text">
+              Start slow or grab it to go. Fresh bread, something warm and a
+              proper coffee.
+            </p>
+            <ul class="food-list text">
+              <li>Sourdough toast with butter and jam</li>
+              <li>Cardamom bun</li>
+              <li>Yoghurt with granola and berries</li>
+              <li>Filter coffee, latte, tea</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="lunch" class="food-section food-section--dark">
+        <div class="section-container food-section__inner">
+          <img
+            src="images/food-lunch.webp"
+            alt="Bowl of soup with bread on a wooden table"
+          />
+          <div class="food-section__body">
+            <span class="food-time">11:00 AM – 3:30 PM</span>
+            <h2>Lunch</h2>
+            <p class="text">
+              A homemade soup and a daily special, changing with the season. Ask
+              us what's on today.
+            </p>
+            <ul class="food-list text">
+              <li>Soup of the day with bread</li>
+              <li>Daily special</li>
+              <li>Quiche with green salad</li>
+              <li>Vegetarian option every day</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="friday-hang" class="food-section">
+        <div class="section-container food-section__inner">
+          <img
+            src="images/food-friday.webp"
+            alt="Flatbread and small dishes on a Friday evening"
+          />
+          <div class="food-section__body">
+            <span class="food-time">15:30</span>
+            <h2>Friday hang</h2>
+            <p class="text">
+              Every Friday we serve new or different small dishes. Sometimes we
+              bake flatbreads, sometimes there's Skagen or other spreads with
+              good bread. It varies, simply put.
+            </p>
+            <ul class="food-list text">
+              <li>Rotating small dishes</li>
+              <li>Freshly baked flatbreads</li>
+              <li>Skagen and other spreads with good bread</li>
+              <li>French wine and drinks</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        id="openinghours-anchor-link"
+        class="open-hours food-section--dark"
+      >
+        <div class="section-container">
+          <ul>
+            <li>Breakfast from 7:45 AM</li>
+
+            <li>Lunch served 11:00 AM – 3:30 PM</li>
+
+            <li>Relax and unwind through the afternoon until 5:00 PM</li>
+
+            <li>Friday evenings until 7:30 PM, with Happy Hour from 3:30 PM</li>
+
+            <span aria-hidden="true"> </span>
+
+            <li>Saturday 8:30 AM – 4:00 PM</li>
+
+            <li>Sunday 9:00 AM – 3:30 PM</li>
+          </ul>
+        </div>
+        <img src="images/open-hours.jpg" alt="Wine bottles in the bar" />
+      </section>
+    </main>
     <footer>
       <div class="section-container">
         <ul class="social-group">
@@ -89,5 +228,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
