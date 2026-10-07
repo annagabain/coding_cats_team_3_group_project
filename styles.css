@@ -157,7 +157,7 @@ events-page h1 {
 
 
   .container {
-    z-index: 60;
+    z-index: 60!important; 
     display: grid;
     grid-template-columns: 1fr;
     flex-direction: row;
@@ -184,7 +184,7 @@ events-page h1 {
     justify-content: flex-end;
   }
   .mobile-nav-container {
-    z-index: 60;
+    z-index: 60!important;
     font-family: var(--font-heading);
     flex-direction: column;
     display: none;
