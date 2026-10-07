@@ -85,10 +85,13 @@ footer {
   font-size: 0.5rem;
 }
 
-events-page h1 {
-    margin: 3vw;
-    font-size: 1rem;
+.events-container{
+  padding: 3vw;
 }
+.events-container h1 {
+  padding: 1vw;
+}
+
 .card {
   height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
@@ -98,9 +101,7 @@ events-page h1 {
   width: 40vw;
   padding: 1vw;
 }
-.menu_hamburger {
-    width: 7vw;
-}
+
 .card button {
   border: 2px solid black;
   background-color: transparent;
@@ -154,7 +155,12 @@ events-page h1 {
 
 /* Mobile Design */
 @media (max-width: 768px) {
-
+.menu_hamburger {
+    position: absolute;
+    top: 1vw;
+    right: 3vw;
+    width: 9vw;
+}
 
   .container {
     z-index: 60!important; 
