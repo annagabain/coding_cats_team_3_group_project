@@ -14,9 +14,6 @@
   --font-header-style: normal;
 }
 
-
-
-
 @font-face {
   font-family: "DM Sans";
   src: url("fonts/DMSans-Regular.ttf") format("truetype");
@@ -85,25 +82,25 @@ footer {
   font-size: 0.5rem;
 }
 
-.events-container{
+.events-container {
   padding: 3vw;
 }
 .events-container h1 {
-  padding: 1vw;
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
+  color: var(--kokvran-red);
+  margin: 0 0 1.5rem;
+  text-align: center;
 }
 
 .card {
-  height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
   background-color: #768b66;
-  height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-family: var(--font-heading);
-  padding-bottom: 2vw;
+  padding-bottom: 20px;
 }
 
 .card:hover {
@@ -115,79 +112,82 @@ footer {
   border: none;
   font-size: 1.2rem;
   text-decoration: none;
-  color:#000000;
-  background-color:#9cb58a;
+  color: #000000;
+  background-color: #9cb58a;
   border-radius: 25px;
-  width: 50%;
+  width: fit-content;
   min-width: 20vw;
-  padding: 1.2vw;
+  padding: 12px;
+  margin: 0 20px;
   display: flex;
   flex-direction: row;
 }
 
 .card a:hover {
-    font-weight: bolder;
-    border: 1.5px solid black;
+  font-weight: bolder;
+  border: 1.5px solid var(--kokvran-red);
+  color: var(--kokvran-red);
 }
 
-
 .card h2 {
-  margin: 2vw 0;
-  padding: 0;
+  margin: 20px 0;
+  padding: 0 20px;
 }
 
 .card h3 {
-  padding: 0 2vw;
+  padding: 0 20px;
   margin-top: 0;
-  margin-bottom: 2.5vw;
+  margin-bottom: 25px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
-
 
 .card img {
   width: 100%;
   margin: 0;
-  padding:0;
-  height: 35vw;
+  padding: 0;
+  height: 25vw;
+  min-height: 200px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-    .top {
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-        font-size: 70%;
-        letter-spacing: 1px;
-        padding: 0.2rem 0.2rem;
-        z-index: 10;
-    }
+.top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 70%;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.2rem;
+  z-index: 10;
+}
 .card {
-  height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
   border-radius: 10px;
 }
 
 /* Mobile Design */
 @media (max-width: 768px) {
-.menu_hamburger {
+  .menu_hamburger {
     position: absolute;
     top: 1vw;
     right: 3vw;
     width: 9vw;
-}
+  }
 
   .container {
-    z-index: 60!important; 
+    z-index: 60 !important;
     display: grid;
     grid-template-columns: 1fr;
     flex-direction: row;
     gap: 3vw;
     height: fit-content;
-    margin: 1vw;
+    justify-content: space-between;
     width: 100%;
   }
   .card {
-    width: 95%;
+    width: 100%;
   }
   h1 {
     font-size: 1.6rem;
@@ -203,7 +203,7 @@ footer {
     justify-content: flex-end;
   }
   .mobile-nav-container {
-    z-index: 60!important;
+    z-index: 60 !important;
     font-family: var(--font-heading);
     flex-direction: column;
     display: none;
@@ -225,13 +225,12 @@ footer {
     font-family: inherit;
     width: fit-content;
     padding: 1vw;
-
   }
   .mobile-nav-container a {
     margin: 1vw;
   }
 
-/* close icon */
+  /* close icon */
   .mobile-nav-container #close {
     position: absolute;
     top: 0;
@@ -244,7 +243,7 @@ footer {
   }
 
   .mobile-nav-container p {
-    color:#000000;
+    color: #000000;
     margin-top: 7vw;
   }
   .mobile-nav-container hr {
@@ -257,13 +256,13 @@ footer {
 @media (min-width: 760px) {
   /* Navigation bar */
 
-    .container {
+  .container {
     display: flex;
     flex-direction: row;
     gap: 3vw;
     flex-wrap: wrap;
     height: fit-content;
-    margin: 1vw;
+    justify-content: space-between;
   }
 
   #mobile-nav {
@@ -439,8 +438,11 @@ footer {
   .open-hours ul {
     margin-bottom: 4rem;
   }
+  .card h3 {
+    font-size: 1.4rem;
+  }
 }
 
 .open {
-    display: flex;
+  display: flex;
 }
