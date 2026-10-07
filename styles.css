@@ -14,6 +14,9 @@
   --font-header-style: normal;
 }
 
+
+
+
 @font-face {
   font-family: "DM Sans";
   src: url("fonts/DMSans-Regular.ttf") format("truetype");
@@ -158,7 +161,7 @@ footer {
     display: flex;
     justify-content: flex-end;
   }
-  #mobile-nav-container {
+  .mobile-nav-container {
     flex-direction: column;
     display: none;
     padding: 0;
@@ -208,4 +211,8 @@ footer {
     margin: 0;
   }
   /* Navigation bar */
+}
+
+.open {
+    display: flex;
 }
