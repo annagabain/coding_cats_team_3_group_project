@@ -182,10 +182,8 @@ footer {
 /* Mobile Design */
 @media (max-width: 768px) {
   .menu_hamburger {
-    position: absolute;
-    top: 1vw;
-    right: 3vw;
     width: 9vw;
+    margin-right: 10px;
   }
 
   .container {
@@ -210,9 +208,10 @@ footer {
   }
 
   #mobile-nav {
-    height: 8vw;
+    height: 8vh;
     display: flex;
     justify-content: flex-end;
+    box-shadow: 0px 3px 3px #768b66;
   }
   .mobile-nav-container {
     z-index: 60 !important;
@@ -287,7 +286,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 7vw;
+    height: 8vh;
+    box-shadow: 0px 3px 3px #768b66;
   }
 
   #desktop-nav button {
@@ -301,6 +301,12 @@ footer {
   #desktop-nav p {
     padding: 0;
     margin: 0;
+  }
+
+  #desktop-nav span {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
   }
   /* Navigation bar */
 }
@@ -369,7 +375,7 @@ footer {
 
 footer {
   background: #768b66;
-  padding: 1.5rem 0;
+  padding: 3rem 0 1rem;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -404,7 +410,7 @@ footer {
 .footer-note {
   border-top: 1px solid black;
   padding-top: 1rem;
-  max-width: 500px;
+  max-width: 450px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
