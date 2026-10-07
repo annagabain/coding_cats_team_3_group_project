@@ -14,6 +14,9 @@
   --font-header-style: normal;
 }
 
+
+
+
 @font-face {
   font-family: "DM Sans";
   src: url("fonts/DMSans-Regular.ttf") format("truetype");
@@ -95,7 +98,15 @@ events-page h1 {
   width: 40vw;
   padding: 1vw;
 }
-
+.menu_hamburger {
+    width: 7vw;
+}
+.card button {
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 1.1vw;
+}
 
 .card img {
   width: 70%;
@@ -135,6 +146,11 @@ events-page h1 {
         padding: 0.2rem 0.2rem;
         z-index: 10;
     }
+.card {
+  height: clamp (fit-content, 30vw, 40vw);
+  width: 40vw;
+  padding: 1vw;
+}
 
 /* Mobile Design */
 @media (max-width: 768px) {
@@ -162,10 +178,12 @@ events-page h1 {
   }
 
   #mobile-nav {
+    height: 8vw;
     display: flex;
     justify-content: flex-end;
   }
-  #mobile-nav-container {
+  .mobile-nav-container {
+    font-family: var(--font-heading);
     flex-direction: column;
     display: none;
     padding: 0;
@@ -174,7 +192,44 @@ events-page h1 {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgb(61, 79, 63);
+    background-color: var(--background-green);
+    color: var(--kokvran-red);
+    padding-left: 3vw;
+    padding-top: 5vw;
+  }
+  .mobile-nav-container .social-media-link {
+    background: var(--kokvran-red);
+    border-radius: 20px;
+    border: 2px solid var(--kokvran-red);
+    color: white;
+    font-family: inherit;
+    width: fit-content;
+    padding: 1vw;
+
+  }
+  .mobile-nav-container a {
+    margin: 1vw;
+  }
+
+/* close icon */
+  .mobile-nav-container #close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 3vw;
+    padding-top: 5vw;
+    padding-right: 3vw;
+  }
+
+  .mobile-nav-container p {
+    color:#000000;
+    margin-top: 7vw;
+  }
+  .mobile-nav-container hr {
+    border: 1px solid var(--kokvran-red);
+    width: 100%;
   }
 }
 
@@ -200,6 +255,7 @@ events-page h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 7vw;
   }
 
   #desktop-nav button {
@@ -367,4 +423,8 @@ footer {
   .open-hours ul {
     margin-bottom: 4rem;
   }
+}
+
+.open {
+    display: flex;
 }
