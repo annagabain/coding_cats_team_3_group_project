@@ -82,71 +82,67 @@ footer {
   font-size: 0.5rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 3vw;
-  flex-wrap: wrap;
-  height: fit-content;
+events-page h1 {
+    margin: 3vw;
+    font-size: 1rem;
 }
-
 .card {
+  height: clamp (fit-content, 30vw, 40vw);
+  width: 40vw;
+  background-color: #768b66;
+  border: 2px solid #768b66;
   height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
   padding: 1vw;
 }
 
-.card button {
-  border: 2px solid black;
-  background-color: transparent;
-  border-radius: 20px;
-  padding: 1.1vw;
-}
 
 .card img {
-  width: inherit;
-  height: 15vw;
+  width: 70%;
   object-fit: cover;
-  border-radius: 20px;
+  display: flex;
 }
 
 .card a {
   text-decoration: none;
   color: var(--text);
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 70%;
+  min-width: 20vw;
+  padding: 2vw;
   display: flex;
   flex-direction: row;
-  gap: 3vw;
-  flex-wrap: wrap;
-  height: fit-content;
 }
 
-.card {
-  height: clamp (fit-content, 30vw, 40vw);
-  width: 40vw;
-  padding: 1vw;
-}
-
-.card button {
-  border: 2px solid black;
-  background-color: transparent;
-  border-radius: 20px;
-  padding: 1.1vw;
+.card a:hover {
+    font-weight: bolder;
+    border: 2px solid black;
 }
 
 .card img {
-  width: inherit;
-  height: 15vw;
+  width: 100%;
+  height: 35vw;
   object-fit: cover;
-  border-radius: 20px;
-}
-
-.card a {
-  text-decoration: none;
-  color: var(--text);
 }
 
 /* Mobile Design */
 @media (max-width: 768px) {
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: row;
+    gap: 3vw;
+    height: fit-content;
+    margin: 1vw;
+    width: 100%;
+  }
+  .card {
+    width: 95%;
+    margin: 2vw;
+  }
   h1 {
     font-size: 1.6rem;
   }
@@ -154,6 +150,7 @@ footer {
   nav {
     display: none;
   }
+
   #mobile-nav {
     display: flex;
     justify-content: flex-end;
@@ -174,6 +171,15 @@ footer {
 /* Desktop Design */
 @media (min-width: 760px) {
   /* Navigation bar */
+
+    .container {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 1vw;
+  }
 
   #mobile-nav {
     display: none;
