@@ -258,6 +258,7 @@ footer {
   }
 
   #desktop-nav {
+    font-family: var(--font-heading);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -273,20 +274,15 @@ footer {
     color: white;
   }
 
-  #desktop-nav a {
-    color: var(--kokvran-red);
-    text-decoration: none;
-  }
-
-  #desktop-nav a {
-    color: white;
-  }
-
   #desktop-nav p {
     padding: 0;
     margin: 0;
   }
   /* Navigation bar */
+}
+
+.selected-nav-section {
+  color: var(--kokvran-red);
 }
 
 .section-container {
