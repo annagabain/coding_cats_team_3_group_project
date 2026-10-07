@@ -1,0 +1,156 @@
+.food-intro {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.food-intro h1 {
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
+  color: var(--kokvran-red);
+  margin: 0 0 1.5rem;
+}
+
+.food-intro__img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-intro .text {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.food-jump {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.food-jump .btn {
+  display: inline-block;
+  color: var(--kokvran-red);
+}
+
+.food-jump .btn:hover,
+.food-jump .btn:focus-visible {
+  background-color: var(--kokvran-red);
+  color: white;
+}
+
+.food-section {
+  padding: 1.5rem 0;
+}
+
+.food-section--dark {
+  background: #768b66;
+}
+
+.food-section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.food-section__inner img {
+  width: 100%;
+  height: 220px;
+  max-width: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-time {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #444;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.food-section__body h2 {
+  font-size: 1.8rem;
+  margin: 0.2rem 0 1rem;
+  color: #830b0b;
+}
+
+.food-section__body .text {
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+.food-list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.food-list li {
+  margin-bottom: 0.4rem;
+  border-bottom: none;
+  line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+  .food-intro__img {
+    height: 300px;
+  }
+  .food-section__inner img {
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .food-intro {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  .food-intro__img {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .food-section {
+    padding: 4rem 0;
+  }
+
+  .food-section__inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .food-section__inner > * {
+    flex: 1;
+  }
+
+  .food-section__inner img {
+    height: 380px;
+    margin: 0;
+  }
+
+  .food-section--dark .food-section__inner {
+    flex-direction: row-reverse;
+  }
+
+  .food-list li {
+    font-size: 1.1rem;
+  }
+}
