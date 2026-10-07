@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/our-food.css" />
+    <link rel="icon" type="image/x-icon" href="images/coffee.svg" />
     <title>Our food</title>
   </head>
   <body>
@@ -35,9 +36,8 @@
     <nav id="desktop-nav">
       <span>Kokvrån</span>
       <a href="index.html">HOME</a>
-      <a href="#openinghours-anchor-link">OPEN HOURS</a>
-      <!-- <a href="index.html#openinghours-anchor-link" >OPEN HOURS</a> -->
-      <a href="ourfood.html">OUR FOOD</a>
+      <a href="index.html#openinghours-anchor-link">OPEN HOURS</a>
+      <a href="ourfood.html" class="selected-nav-section">OUR FOOD</a>
       <a href="events.html">EVENTS</a>
       <button>
         <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
@@ -136,30 +136,15 @@
           </div>
         </div>
       </section>
-      <section
-        id="openinghours-anchor-link"
-        class="open-hours food-section--dark"
-      >
-        <div class="section-container">
-          <ul>
-            <li>Breakfast from 7:45 AM</li>
-
-            <li>Lunch served 11:00 AM – 3:30 PM</li>
-
-            <li>Relax and unwind through the afternoon until 5:00 PM</li>
-
-            <li>Friday evenings until 7:30 PM, with Happy Hour from 3:30 PM</li>
-
-            <span aria-hidden="true"> </span>
-
-            <li>Saturday 8:30 AM – 4:00 PM</li>
-
-            <li>Sunday 9:00 AM – 3:30 PM</li>
-          </ul>
-        </div>
-        <img src="images/open-hours.jpg" alt="Wine bottles in the bar" />
-      </section>
     </main>
+    <div class="top">
+      <a
+        href="#"
+        aria-label="Go to the top of the page"
+        class="btn btn--secondary"
+        >To the Top &#8593;</a
+      >
+    </div>
     <footer>
       <div class="section-container">
         <ul class="social-group">

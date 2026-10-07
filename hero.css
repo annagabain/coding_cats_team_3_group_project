@@ -12,6 +12,8 @@
 
     display: flex;
     flex-direction: column;
+
+    z-index: 20;
 }
 
 .hero-content {
@@ -21,7 +23,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 
     max-width: 900px;

@@ -5,69 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/coffee.svg" />
     <title>Events at Kokvran</title>
   </head>
   <body>
+    <!-- Mobile Nav bar  -->
+    <nav id="mobile-nav">
+      <img
+        class="menu_hamburger"
+        id="menu_hamburger"
+        src="images/hamburger_menu.svg"
+        alt="hamburger menu icon"
+      />
+      <div class="mobile-nav-container" id="mobile-nav-container">
+        <button id="close">
+          <img src="images/close.svg" alt="a close icon" />
+        </button>
+        <a href="index.html">HOME</a>
+        <hr />
+        <a id="open_hours" href="#openinghours-anchor-link">OPEN HOURS</a>
+        <a href="ourfood.html">OUR FOOD</a>
+        <a href="events.html">EVENTS</a>
+        <a
+          class="social-media-link"
+          href="https://www.instagram.com/kokvran.karrtorp/"
+          target="_blank"
+          >INSTAGRAM</a
+        >
+        <p>
+          Kärrtorpsplan 7<br />
+          hej@kokvran.com
+        </p>
+      </div>
+    </nav>
+    <!-- Mobile Nav bar  -->
+
     <!-- Desktop Nav bar  -->
     <nav id="desktop-nav">
       <span>Kokvrån</span>
       <a href="index.html">HOME</a>
-      <a href="index.html#openinghours-anchor-link" >OPEN HOURS</a>
+      <a href="index.html#openinghours-anchor-link">OPEN HOURS</a>
       <a href="ourfood.html">OUR FOOD</a>
-      <a href="events.html">EVENTS</a>
+      <a href="events.html" class="selected-nav-section">EVENTS</a>
       <button>
         <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
           >FOLLOW US</a
         >
       </button>
     </nav>
-    <h1>Events at Kokvrån</h1>
-    <div class="container">
-      <!-- card one -->
-      <div class="card">
-        <img
-          src="images/wine.jpg"
-          alt="a photo of the wine bottle, grapes and a wine glass with a colorful orange background"
-        />
-        <h2>Afterwork!</h2>
-        <h3>
-          Every Friday we gather to socialise and celebrate the coming of the
-          weekend. Come and enjoy our french wine, and meet people who live in
-          your neighborhood.<br />
-          Psst! Also, the wine is 15% off.
-        </h3>
-        <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
-          >Check out our Instagram for more</a
-        >
+    <!-- Desktop Nav bar  -->
+    <main class="events-container">
+      <h1>Events at Kokvrån</h1>
+      <div class="container">
+        <!-- card one -->
+        <div class="card">
+          <img
+            src="images/wine.jpg"
+            alt="a photo of the wine bottle, grapes and a wine glass with a colorful orange background"
+          />
+          <h2>Afterwork!</h2>
+          <h3>
+            Every Friday we gather to socialise and celebrate the coming of the
+            weekend. Come and enjoy our french wine, and meet people who live in
+            your neighborhood.<br />
+            Psst! Also, the wine is 15% off.
+          </h3>
+          <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
+            >Check out our Instagram for more</a
+          >
+        </div>
+        <!-- card two -->
+        <div class="card">
+          <img
+            src="images/art.jpg"
+            alt="a photo of the room wall with a lot of artworks on it"
+          />
+          <h2>Art</h2>
+          <h3>
+            Enjoy the art by local artists on our walls. We change the art every
+            month. You get to see beautiful art and support local artists.
+            <br />And yes, you can buy the artworks, just ask us about it.
+          </h3>
+          <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
+            >Check out our Instagram for more</a
+          >
+        </div>
+        <!-- card three -->
+        <div class="card">
+          <img src="images/comedy.jpg" alt="a photo of a man laughing" />
+          <h2>Kärrtorp comedy nights</h2>
+          <h3>
+            Local comics take the stage at our cafe, come and have fun! Grab a
+            chair, get a ticket at the entrance.
+          </h3>
+          <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
+            >Check out our Instagram for more</a
+          >
+        </div>
       </div>
-      <!-- card two -->
-      <div class="card">
-        <img
-          src="images/art.jpg"
-          alt="a photo of the room wall with a lot of artworks on it"
-        />
-        <h2>Art</h2>
-        <h3>
-          Enjoy the art by local artists on our walls. We change the art every
-          month. You get to see beautiful art and support local artists.
-          <br />And yes, you can buy the artworks, just ask us about it.
-        </h3>
-        <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
-          >Check out our Instagram for more</a
-        >
-      </div>
-      <!-- card three -->
-      <div class="card">
-        <img src="images/comedy.jpg" alt="a photo of a man laughing" />
-        <h2>Kärrtorp comedy nights</h2>
-        <h3>
-          Local comics take the stage at our cafe, come and have fun! Grab a
-          chair, get a ticket at the entrance.
-        </h3>
-        <a href="https://www.instagram.com/kokvran.karrtorp/" target="_blank"
-          >Check out our Instagram for more</a
-        >
-      </div>
+    </main>
+    <div class="top">
+      <a
+        href="#"
+        aria-label="Go to the top of the page"
+        class="btn btn--secondary"
+        >To the Top &#8593;</a
+      >
     </div>
     <footer>
       <div class="section-container">
@@ -137,5 +180,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
