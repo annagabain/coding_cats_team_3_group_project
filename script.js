@@ -15,9 +15,4 @@ openHours.addEventListener("click", toggleNav)
 //Shared function
  function toggleNav () {
     mobileNavContainer.classList.toggle("open")
-    console.log('hi')
 }
-
-
-
-
