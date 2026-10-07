@@ -85,15 +85,15 @@ footer {
   font-size: 0.5rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 3vw;
-  flex-wrap: wrap;
-  height: fit-content;
+events-page h1 {
+    margin: 3vw;
+    font-size: 1rem;
 }
-
 .card {
+  height: clamp (fit-content, 30vw, 40vw);
+  width: 40vw;
+  background-color: #768b66;
+  border: 2px solid #768b66;
   height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
   padding: 1vw;
@@ -109,22 +109,43 @@ footer {
 }
 
 .card img {
-  width: inherit;
-  height: 15vw;
+  width: 70%;
   object-fit: cover;
-  border-radius: 20px;
+  display: flex;
 }
 
 .card a {
   text-decoration: none;
   color: var(--text);
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 70%;
+  min-width: 20vw;
+  padding: 2vw;
   display: flex;
   flex-direction: row;
-  gap: 3vw;
-  flex-wrap: wrap;
-  height: fit-content;
 }
 
+.card a:hover {
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+.card img {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+}
+
+    .top {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 70%;
+        letter-spacing: 1px;
+        padding: 0.2rem 0.2rem;
+        z-index: 10;
+    }
 .card {
   height: clamp (fit-content, 30vw, 40vw);
   width: 40vw;
@@ -133,6 +154,21 @@ footer {
 
 /* Mobile Design */
 @media (max-width: 768px) {
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: row;
+    gap: 3vw;
+    height: fit-content;
+    margin: 1vw;
+    width: 100%;
+  }
+  .card {
+    width: 95%;
+    margin: 2vw;
+  }
   h1 {
     font-size: 1.6rem;
   }
@@ -140,6 +176,7 @@ footer {
   nav {
     display: none;
   }
+
   #mobile-nav {
     height: 8vw;
     display: flex;
@@ -200,6 +237,15 @@ footer {
 @media (min-width: 760px) {
   /* Navigation bar */
 
+    .container {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 1vw;
+  }
+
   #mobile-nav {
     display: none;
   }
@@ -234,6 +280,149 @@ footer {
     margin: 0;
   }
   /* Navigation bar */
+}
+
+.section-container {
+  padding: 0 15px;
+}
+.text,
+.open-hours ul {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+.open-hours,
+.info {
+  padding: 3rem 0 2rem;
+}
+.gallery {
+  background: #768b66;
+}
+.gallery .section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.gallery .section-container img {
+  max-width: 360px;
+  width: 100%;
+}
+
+.open-hours ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+  span {
+    margin: 0.2rem auto;
+    width: 30px;
+    height: 1px;
+    background-color: #000;
+  }
+}
+
+.open-hours img {
+  object-fit: cover;
+  object-position: center;
+  height: 200px;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.open-hours {
+  padding-bottom: 0;
+}
+
+footer {
+  background: #768b66;
+  padding: 1.5rem 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contact .text {
+  font-size: 1.1rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.social-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+  max-width: fit-content;
+  svg {
+    width: 30px;
+    margin: auto;
+    display: block;
+    margin: 0;
+  }
+}
+
+.footer-note {
+  border-top: 1px solid black;
+  padding-top: 1rem;
+  max-width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  .gallery .section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .text,
+  .open-hours ul {
+    font-size: 18px;
+  }
+  .social-group {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .text,
+  .open-hours ul {
+    font-size: 1.4rem;
+  }
+  .open-hours img {
+    height: 300px;
+  }
+  .gallery .section-container {
+    gap: 30px;
+  }
+  .info {
+    padding: 5rem 0 4rem;
+  }
+  .open-hours {
+    padding-top: 5rem;
+  }
+  .open-hours ul {
+    margin-bottom: 4rem;
+  }
 }
 
 .open {
