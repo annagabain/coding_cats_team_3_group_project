@@ -175,7 +175,7 @@ footer {
 }
 
 .card {
-  width: 40vw;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -268,7 +268,8 @@ footer {
   /* Navigation bar */
 
   .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-direction: row;
     gap: 3vw;
     flex-wrap: wrap;
